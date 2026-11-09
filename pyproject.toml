@@ -1,0 +1,13 @@
+[build-system]
+requires=["setuptools>=68","wheel"]
+build-backend="setuptools.build_meta"
+[project]
+name="aeropulse-air"
+version="0.1.0"
+description="Forecasts a synthetic PM2.5-like concentration from calendar cycles, wind, rainfall, temperature, episodic emi"
+requires-python=">=3.9"
+dependencies=["numpy==2.0.2","scikit-learn==1.6.1"]
+[project.optional-dependencies]
+test=["pytest==8.4.2"]
+[tool.pytest.ini_options]
+testpaths=["tests"]
